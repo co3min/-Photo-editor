@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Editor Fotografii Raster</title>
+    <link rel="stylesheet" href="4_1088_Pavel_Cosmin.css" />
+  </head>
+  <body>
+    <div id="pagina">
+      <div>
+        <div class="container" id="upload">
+          <h1 class="titlu">Editor Fotografii Raster</h1>
+          <p id="drag_drop_txt">Drag and Drop an image here:</p>
+          <canvas id="canvas_image"></canvas>
+          <canvas id="canvas_crop"></canvas>
+        </div>
+        <div class="container_buttons">
+          <button id="downloadImage">Download</button>
+          <button id="select_button">Select</button>
+          <button id="crop_button">Crop</button>
+          <button id="insert_text">Insert Text</button>
+          <button id="schimbare_dimensiuni">Scalare Imagine</button>
+          <button id="sterge_zona">Sterge</button>
+          <button id="back_btn">Back</button>
+        </div>
+      </div>
+      <form action="#" id="form_utilizator">
+        <p>The text will be positioned where you click on the image.</p>
+        <label for="text">Text: </label>
+        <input type="text" id="text" />
+
+        <label for="dimensiuni">Dimensiuni: </label>
+        <input type="dimensiuni" id="dimensiuni" />
+
+        <label for="colorpicker">Culoare: </label>
+        <input type="color" id="colorpicker" value="#ff0000" />
+
+        <input type="button" name="btnClear" id="btnClear" value="Clear" />
+      </form>
+      <form action="#" id="form_dimensiuni">
+        <label for="latime">Latime: </label>
+        <input type="latime" id="latime" />
+
+        <!-- <label for="inaltime">Inaltime: </label>
+        <input type="inaltime" id="inaltime" /> -->
+
+        <input type="button" name="btnTrimite" id="btnTrimite" value="Send" />
+      </form>
+    </div>
+
+    <script src="4_1088_Pavel_Cosmin.js"></script>
+  </body>
+</html>
